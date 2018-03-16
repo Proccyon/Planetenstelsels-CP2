@@ -63,3 +63,8 @@ TransitFlux = Flux[TransitPhase]
 AverageFlux = np.average(TransitFlux)
 print "Average flux around Phase(0): " + str(AverageFlux)
 #Output: Average flux around Phase(0): 0.949356592986
+
+#Calculating the radius of the planet WASP-203b
+Depth = 1-AverageFlux #Relative Brightness
+RadiusStar = 0.77 #Solar radii
+RadiusPlanet = RadiusStar*(Depth)**0.5 #Solar radii
