@@ -5,6 +5,10 @@ M_star = 0.80*1.989*(10)**30 #kg
 SM_Axis = (((P_planet**2)*G*M_star)/((2*np.pi)**2))**(1/3)
 #Output SM_Axis: 4039258283.2208753 m
 
+#Calculating velocity of the planet in its orbit, assuming circular orbit
+vplanet = (2*np.pi*SM_Axis)/(P_planet)
+#Output vplanet: 162096.8180992068 m/s
+
 #Calculating inclination plus the mass of the planet
 RadiusSum = (RadiusStar + RadiusPlanet)*6.957*(10)**8
 inclination = math.degrees(np.arccos(RadiusSum / SM_Axis))
