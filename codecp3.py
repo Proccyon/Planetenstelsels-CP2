@@ -15,3 +15,4 @@ SM_axis_E = 1.496*(10)**11 #m
 
 Temp_E = Eff_Temp(Albedo_E, L_sun, SM_axis_E) 
 print(Temp_E)
+#254.58412831606898 K
